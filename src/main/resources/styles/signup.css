@@ -1,0 +1,120 @@
+/* General Container */
+.signup-container {
+    -fx-background-color: #fafafa;
+    -fx-padding: 100 20;
+}
+.scroll-pane > .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-background-color: transparent;
+}
+/* Signup Card */
+.signup-card {
+    -fx-background-color: #fff;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8px;
+    -fx-padding: 32 30;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+    -fx-spacing: 20;
+    -fx-alignment: center;
+    -fx-max-width: 448px;
+}
+
+/* Header Section */
+.header-section {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+/* Logo */
+.logo {
+    -fx-fit-width: 32;
+    -fx-fit-height: 36;
+}
+
+/* Titles */
+.signup-title {
+    -fx-text-fill: #171717;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.signup-subtitle {
+    -fx-text-fill: #525252;
+    -fx-font-size: 14px;
+}
+
+/* Signup Form */
+.signup-form {
+    -fx-spacing: 15;
+}
+
+/* Form Groups */
+.form-group {
+    -fx-spacing: 5;
+}
+
+.form-label {
+    -fx-text-fill: #404040;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+}
+
+.form-input {
+    -fx-background-color: #fff;
+    -fx-border-color: #d4d4d4;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 12;
+}
+
+/* Terms Section */
+.terms-section {
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+}
+
+.terms-checkbox {
+    -fx-border-color: #d4d4d4;
+    -fx-border-radius: 1;
+}
+
+.terms-text {
+    -fx-text-fill: #525252;
+    -fx-font-size: 14px;
+}
+
+.terms-link {
+    -fx-fill: #171717;
+    -fx-underline: true;
+}
+
+.errorLabel {
+    -fx-font-size: 10px;
+    -fx-text-fill: red;
+}
+/* Submit Button */
+.submit-button {
+    -fx-background-color: #262626;
+    -fx-text-fill: white;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 14px;
+    -fx-padding: 12;
+}
+
+/* Login Section */
+.login-section {
+    -fx-alignment: center;
+    -fx-spacing: 6;
+}
+
+.login-text {
+    -fx-text-fill: #525252;
+    -fx-font-size: 14px;
+}
+
+.login-link {
+    -fx-text-fill: #171717;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+}

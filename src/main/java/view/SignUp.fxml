@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignupController">
+    <content>
+        <VBox alignment="CENTER">
+            <stylesheets>
+                <URL value="@../../resources/styles/signup.css" />
+            </stylesheets>
+            <children>
+                <StackPane styleClass="signup-container">
+                    <VBox alignment="CENTER" maxWidth="400.0" spacing="20" styleClass="signup-card">
+                        <!-- Header Section -->
+                        <VBox alignment="CENTER" spacing="10" styleClass="header-section">
+                            <!-- Logo -->
+                            <ImageView fitHeight="36" fitWidth="32" preserveRatio="true">
+                                <Image url="@../../resources/icons/user-icon.png" />
+                            </ImageView>
+
+                            <!-- Title -->
+                            <Label styleClass="signup-title" text="%label.createYourAccount" />
+                            <Label styleClass="signup-subtitle" text="%label.fillInYourInfo" />
+                        </VBox>
+
+                        <!-- Signup Form -->
+                        <VBox spacing="15" styleClass="signup-form">
+                            <!-- Username -->
+                            <VBox spacing="5" styleClass="form-group">
+                                <Label styleClass="form-label" text="%label.username" />
+                                <TextField fx:id="usernameField" promptText="%placeholder.username" styleClass="form-input" />
+                            </VBox>
+
+                            <!-- Email -->
+                            <VBox spacing="5" styleClass="form-group">
+                                <Label styleClass="form-label" text="%label.email" />
+                                <TextField fx:id="emailField" styleClass="form-input" />
+                            </VBox>
+
+                            <!-- Fullname -->
+                            <VBox spacing="5" styleClass="form-group">
+                                <Label styleClass="form-label" text="%label.fullname" />
+                                <TextField fx:id="fullnameField" promptText="%placeholder.username" styleClass="form-input" />
+                            </VBox>
+
+                            <!-- Password -->
+                            <VBox spacing="5" styleClass="form-group">
+                                <Label styleClass="form-label" text="%label.password" />
+                                <PasswordField fx:id="passwordField" promptText="%placeholder.password" styleClass="form-input" />
+                            </VBox>
+
+                            <!-- Confirm Password -->
+                            <VBox spacing="5" styleClass="form-group">
+                                <Label styleClass="form-label" text="%label.confirm_password" />
+                                <PasswordField fx:id="confirmPasswordField" promptText="%placeholder.password" styleClass="form-input" />
+                            </VBox>
+
+                            <!-- Terms Section -->
+                            <HBox prefHeight="22.0" prefWidth="284.0" styleClass="terms-section">
+                                <children>
+                                    <CheckBox fx:id="termsCheckbox" mnemonicParsing="false" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%label.iAgreeToThe" />
+                                    <Hyperlink text="%link.termsOfService" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%label.and" />
+                                    <Hyperlink text="%link.privacyPolicy" />
+                                </children>
+                            </HBox>
+
+                            <VBox VBox.vgrow="ALWAYS">
+                                <children>
+                                    <!-- Make sure errorLabel is visible and can grow to fit its content -->
+                                    <Label fx:id="errorLabel" styleClass="errorLabel" visible="false" wrapText="true" VBox.vgrow="NEVER" />
+                                </children>
+                            </VBox>
+
+                            <!-- Submit Button -->
+                            <Button fx:id="signupButton" defaultButton="true" maxWidth="Infinity" onAction="#handleSignup" styleClass="submit-button" text="%button.createAccount" />
+                        </VBox>
+
+                        <!-- Login Section -->
+                        <VBox alignment="CENTER" spacing="6" styleClass="login-section">
+                            <Label styleClass="login-text" text="%link.already_registered" />
+                            <Hyperlink fx:id="signinLink" onAction="#handleSignin" styleClass="login-link" text="%button.signin" />
+                        </VBox>
+                    </VBox>
+                </StackPane>
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>

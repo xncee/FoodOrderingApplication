@@ -1,0 +1,65 @@
+.header {
+    -fx-font-family: "Inter";
+    -fx-background-color: white;
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 0 0 1 0;
+}
+
+.header-content {
+    -fx-spacing: 20;
+    -fx-alignment: center-left;
+}
+
+.brand {
+    -fx-spacing: 16;
+    -fx-alignment: center-left;
+}
+
+.brand-name {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.user-section {
+    -fx-spacing: 24;
+    -fx-alignment: center;
+}
+
+.notification-btn,
+.dropdown-btn,
+.action-btn {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+    -fx-cursor: hand;
+}
+.dropdown-btn {
+    -fx-arrow-shape-color: transparent;
+    -fx-border-color: transparent; /* No border */
+    -fx-effect: null; /* Remove any shadow or effects */
+    -fx-text-fill: transparent;
+}
+.menu-button .arrow {
+    -fx-shape: "";
+    -fx-background-color: transparent; /*hides the default arrow*/
+}
+.notification-btn:hover,
+.dropdown-btn:hover,
+.action-btn:hover {
+    -fx-background-color: #fafafa;
+}
+
+.user-profile {
+    -fx-spacing: 8;
+    -fx-alignment: center;
+}
+
+.avatar {
+    -fx-arc-width: 100;
+    -fx-arc-height: 100;
+}
+.avatar-button {
+    fx-background-color: transparent;
+}
+.username {
+    -fx-font-weight: 500;
+}

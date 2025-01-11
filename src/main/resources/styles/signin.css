@@ -1,0 +1,184 @@
+/* General Container */
+.login-container {
+    /* Background color of the entire login page */
+    -fx-background-color: #fafafa;
+    /* Default font family for all text */
+    -fx-font-family: "System";
+}
+
+/* Login Card */
+.login-card {
+    /* Background color for the card */
+    -fx-background-color: white;
+    /* Padding inside the card */
+    -fx-padding: 32px;
+    /* Rounded corners */
+    -fx-background-radius: 8px;
+    /* Drop shadow effect for depth */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+/* Logo */
+.logo {
+    /* Ensures the image maintains its aspect ratio */
+    -fx-preserve-ratio: true;
+}
+
+/* Application Title */
+.app-title {
+    /* Font size for the app title */
+    -fx-font-size: 24px;
+    /* Bold font for emphasis */
+    -fx-font-weight: bold;
+    /* Black text color */
+    -fx-text-fill: #000000;
+}
+
+/* Application Description */
+.app-description {
+    /* Font size for the description */
+    -fx-font-size: 16px;
+    /* Lighter gray text color */
+    -fx-text-fill: #737373;
+}
+
+/* Form Labels */
+.form-label {
+    /* Font size for input labels */
+    -fx-font-size: 14px;
+    /* Bold font for clarity */
+    -fx-font-weight: bold;
+    /* Dark gray text color */
+    -fx-text-fill: #404040;
+}
+
+/* Form Inputs */
+.form-input {
+    /* Height for input fields */
+    -fx-pref-height: 42px;
+    /* Rounded corners for inputs */
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    /* Light gray border */
+    -fx-border-color: #d4d4d4;
+    /* Border thickness */
+    -fx-border-width: 1px;
+    /* Padding inside input fields */
+    -fx-padding: 0 12px;
+}
+
+/* Focused Input */
+.form-input:focused {
+    /* Darker border color when focused */
+    -fx-border-color: #262626;
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+    /* Font size for the text */
+    -fx-font-size: 14px;
+    /* Medium gray text color */
+    -fx-text-fill: #525252;
+}
+
+.remember-me .box {
+    /* White background for checkbox */
+    -fx-background-color: white;
+    /* Black border for the checkbox */
+    -fx-border-color: #000000;
+    /* Thin border */
+    -fx-border-width: 0.5px;
+    /* Rounded corners for checkbox */
+    -fx-border-radius: 1px;
+    /* Fixed size for the checkbox */
+    -fx-pref-width: 13px;
+    -fx-pref-height: 13px;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    /* Font size for the link */
+    -fx-font-size: 14px;
+    /* Medium gray text color */
+    -fx-text-fill: #525252;
+    /* No underline by default */
+    -fx-underline: false;
+}
+
+/* Login Button */
+.login-button {
+    /* Dark background color for the button */
+    -fx-background-color: #262626;
+    /* White text color */
+    -fx-text-fill: white;
+    /* Font size for button text */
+    -fx-font-size: 16px;
+    /* Fixed height for the button */
+    -fx-pref-height: 40px;
+    /* Rounded corners for the button */
+    -fx-background-radius: 6px;
+    /* Changes cursor to a hand pointer */
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    /* Slightly lighter background color on hover */
+    -fx-background-color: #404040;
+}
+
+.login-button:pressed {
+    -fx-background-color: #1a1a1a;
+}
+
+/* Register Prompt */
+.register-prompt {
+    /* Font size for the prompt text */
+    -fx-font-size: 14px;
+    /* Medium gray text color */
+    -fx-text-fill: #525252;
+}
+
+/* Register Link */
+.register-link {
+    /* Font size for the link */
+    -fx-font-size: 14px;
+    /* Darker text color for emphasis */
+    -fx-text-fill: #262626;
+    /* No underline */
+    -fx-underline: false;
+}
+
+/* Terms and Legal Text */
+.terms-text {
+    /* Font size for the terms text */
+    -fx-font-size: 14px;
+    /* Medium gray text color */
+    -fx-fill: #525252;
+}
+
+.legal-link {
+    /* Font size for the legal link */
+    -fx-font-size: 14px;
+    /* Medium gray text color */
+    -fx-text-fill: #525252;
+    /* Underlined for emphasis */
+    -fx-underline: true;
+}
+
+/* Form Group */
+.form-group {
+    /* Spacing between label and input */
+    -fx-spacing: 4;
+}
+
+/* Login Form */
+.login-form {
+    /* Spacing between form elements */
+    -fx-spacing: 16;
+}
+
+/* Login Footer */
+.login-footer {
+    /* Spacing between footer elements */
+    -fx-spacing: 6;
+}

@@ -1,0 +1,214 @@
+.dashboard-container {
+    -fx-background-color: #fafafa;
+    -fx-font-family: "Inter";
+}
+
+.action-btn {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+    -fx-cursor: hand;
+}
+
+.action-btn:hover {
+    -fx-background-color: #fafafa;
+}
+
+.main-content {
+    -fx-background-color: transparent;
+     -fx-padding: 32 14;
+}
+
+.stats-grid {
+    -fx-hgap: 24;
+    -fx-vgap: 24;
+}
+
+.stat-card {
+    -fx-background-color: white;
+    -fx-padding: 24;
+    -fx-spacing: 12;
+    -fx-border-color: #e5e5e5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 1, 0, 0, 1);
+}
+
+.stat-header {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.stat-title {
+    -fx-text-fill: #737373;
+    -fx-font-size: 14;
+    -fx-font-weight: 500;
+}
+
+.stat-value {
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+.documents-section {
+    -fx-background-color: white;
+    -fx-border-color: #e5e5e5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 1, 0, 0, 1);
+}
+
+.documents-header {
+    -fx-padding: 24;
+    -fx-spacing: 24;
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 0 0 1 0;
+}
+
+.documents-title-row {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.documents-title {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.add-document-btn, .generate-report-btn {
+    -fx-font-family: "Inter";
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 8;
+}
+.generate-report-btn {
+    -fx-background-color: #F5F5F5;
+    -fx-text-fill: black;
+}
+.add-document-btn {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.add-document-btn:hover, .generate-report-btn:hover {
+    -fx-opacity: 0.9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 2); /* Shadow effect on hover */
+}
+
+.search-row {
+    -fx-spacing: 16;
+}
+
+.search-input-wrapper {
+    -fx-spacing: 12;
+    -fx-padding: 12;
+    -fx-background-color: white;
+    -fx-border-color: #e5e5e5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-alignment: center-left;
+}
+
+.search-input {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-prompt-text-fill: #adaebc;
+}
+
+.filters-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: #e5e5e5;
+    -fx-border-radius: 8;
+    -fx-padding: 12 16;
+    -fx-cursor: hand;
+}
+
+.filters-btn:hover {
+    -fx-background-color: #fafafa;
+}
+
+.table-view .column-header {
+    -fx-color: #737373;
+    -fx-background-color: #fafafa; /* Light background for header */
+    -fx-border-color: transparent; /* No border for header */
+    -fx-width: 40;
+}
+
+.documents-table {
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+}
+
+.table-column {
+    -fx-alignment: center-left;
+    -fx-padding: 16;
+}
+
+.table-column-header {
+    -fx-background-color: #fafafa;
+    -fx-font-size: 12;
+    -fx-font-weight: 500;
+    -fx-padding: 16;
+}
+
+.table-cell {
+    -fx-font-family: "Inter";
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER; /* Centers the cell within the column */
+}
+
+.table-row-cell {
+    -fx-border-color: transparent; /* No border for rows */
+    -fx-table-cell-border-color: transparent; /* No border for table cells */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #E5E7EB;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.pagination {
+    -fx-padding: 16 24;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.pagination-info {
+    -fx-text-fill: #737373;
+}
+
+.pagination-controls {
+    -fx-spacing: 8;
+}
+
+.pagination-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: #e5e5e5;
+    -fx-border-radius: 8;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.pagination-btn:hover {
+    -fx-background-color: #fafafa;
+}
+
+.pagination-btn:disabled {
+    -fx-opacity: 0.5;
+}
+
+.pagination-btn.active {
+    -fx-background-color: #262626;
+    -fx-text-fill: white;
+    -fx-border-color: #262626;
+}
+
+.results-msg {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}

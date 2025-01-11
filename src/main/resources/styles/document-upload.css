@@ -1,0 +1,152 @@
+/* Main container settings */
+.main-container {
+   -fx-background-color: #fafafa; /* Light gray background */
+   -fx-spacing: 0; /* No spacing between child elements */
+   -fx-padding: 0; /* No padding around the container */
+   -fx-alignment: center; /* Align content in the center */
+}
+
+/* Main content settings */
+.main-content {
+    -fx-background-color: #fafafa; /* Light gray background */
+    -fx-fit-to-width: true; /* Make content fit width */
+    -fx-fit-to-height: true; /* Make content fit height */
+    -fx-padding: 0; /* No padding around the main content */
+}
+
+/* Content wrapper styling */
+.content-wrapper {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-max-width: 896; /* Set max width for content */
+}
+
+/* Page title styling */
+.page-title {
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 24; /* Font size for the page title */
+    -fx-font-weight: bold; /* Bold title */
+}
+
+/* Page description styling */
+.page-description {
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 16; /* Font size for description */
+    -fx-text-fill: #525252; /* Dark gray color for text */
+}
+
+/* Form container styling */
+.form-container {
+    -fx-background-color: white; /* White background for the form */
+    -fx-background-radius: 8; /* Rounded corners */
+    -fx-border-radius: 8; /* Rounded borders */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 1, 0, 0, 1); /* Drop shadow for form */
+}
+
+/* Form label styling */
+.form-label {
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 14; /* Font size */
+    -fx-font-weight: bold; /* Make label bold */
+    -fx-text-fill: #404040; /* Dark gray color */
+}
+
+/* Styling for input fields */
+.text-field, .text-area, .combo-box, .date-picker {
+    -fx-background-color: white; /* White background */
+    -fx-border-color: #e5e7eb; /* Light gray border color */
+    -fx-border-radius: 6; /* Rounded corners for inputs */
+    -fx-background-radius: 6; /* Rounded background */
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 16; /* Font size for input fields */
+}
+
+/* Combo box specific styling */
+.combo-box {
+    -fx-background-color: #EFEFEF; /* Light gray background for combo box */
+}
+
+/* Date picker arrow button styling */
+.date-picker .arrow-button {
+    -fx-background-color: transparent; /* Make arrow button background transparent */
+}
+
+/* Disabled input field styling */
+.text-field:disabled {
+    -fx-background-color: rgba(239,239,239,0.3); /* Light gray background when disabled */
+    -fx-text-fill: #adaebc; /* Gray text */
+}
+
+/* Upload zone styling */
+.upload-zone {
+    -fx-border-color: #e5e7eb; /* Light gray border */
+    -fx-border-style: dashed; /* Dashed border style */
+    -fx-border-width: 2; /* Border width */
+    -fx-border-radius: 8; /* Rounded corners */
+}
+
+/* Text inside the upload zone */
+.upload-text {
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 16; /* Font size */
+    -fx-text-fill: #525252; /* Dark gray text color */
+}
+
+/* Browse link styling */
+.browse-link {
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 16; /* Font size */
+    -fx-text-fill: #404040; /* Darker gray color */
+    -fx-underline: true; /* Underlined link */
+}
+
+/* File size limit text styling */
+.file-size-limit {
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 14; /* Font size */
+    -fx-text-fill: #737373; /* Lighter gray color */
+}
+
+/* General button styling */
+Button {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-color: transparent; /* Transparent border */
+    -fx-padding: 0; /* No padding */
+    -fx-focus-color: transparent; /* No focus color */
+    -fx-faint-focus-color: transparent; /* No faint focus color */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+}
+
+/* Primary button styling */
+.btn-primary {
+    -fx-background-color: #171717; /* Dark background */
+    -fx-text-fill: white; /* White text color */
+    -fx-background-radius: 6; /* Rounded corners */
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 16; /* Font size */
+    -fx-padding: 11 24; /* Padding */
+}
+
+/* Secondary button styling */
+.btn-secondary {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-color: #e5e7eb; /* Light gray border */
+    -fx-border-radius: 6; /* Rounded corners */
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 16; /* Font size */
+    -fx-padding: 11 24; /* Padding */
+}
+
+/* Footer styling */
+.footer {
+    -fx-padding: 27 0; /* Padding for footer */
+    -fx-font-family: "Inter"; /* Font family */
+    -fx-font-size: 14; /* Font size */
+    -fx-text-fill: #525252; /* Dark gray text color */
+}
+
+.errorLabel {
+    -fx-font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: red;
+    -fx-padding: 0;
+}
