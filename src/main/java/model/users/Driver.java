@@ -14,7 +14,7 @@ public class Driver extends User {
         private double rating;
         private String preferredPaymentMethod;
 
-        public DriverBuilder(String id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
+        public DriverBuilder(int id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
             super(UserType.DRIVER, id, username, fullName, email, phoneNumber, hashedPassword);
         }
 

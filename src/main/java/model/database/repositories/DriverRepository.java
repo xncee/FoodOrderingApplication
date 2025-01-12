@@ -1,29 +1,28 @@
 package model.database.repositories;
 
-import model.users.Restaurant;
+import model.users.Driver;
 import model.users.User;
 
 import java.util.List;
 
-public class RestaurantRepository implements IRepository<Restaurant> {
-
+public class DriverRepository implements IRepository<Driver> {
     @Override
-    public Restaurant getById(int id) {
+    public Driver getById(int id) {
         return null;
     }
 
     @Override
-    public List<Restaurant> getAll() {
+    public List<Driver> getAll() {
         return null;
     }
 
     @Override
-    public void save(Restaurant entity) {
+    public void save(Driver entity) {
 
     }
 
     @Override
-    public void update(Restaurant entity) {
+    public void update(Driver entity) {
 
     }
 

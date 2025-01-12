@@ -3,26 +3,18 @@ package model;
 import java.time.LocalDateTime;
 
 public class Review {
-    private String reviewId;
     private String orderId;
-    private String comment;
+    private String restaurantId;
+    private String reviewText;
     private double rating;
-    private LocalDateTime createdAt;
+    private LocalDateTime createdDate;
 
-    public Review(String reviewId, String orderId, String comment, double rating, LocalDateTime createdAt) {
-        this.reviewId = reviewId;
+    public Review(String orderId, String restaurantId, String reviewText, double rating, LocalDateTime createdDate) {
         this.orderId = orderId;
-        this.comment = comment;
+        this.restaurantId = restaurantId;
+        this.reviewText = reviewText;
         this.rating = rating;
-        this.createdAt = createdAt;
-    }
-
-    public String getReviewId() {
-        return reviewId;
-    }
-
-    public void setReviewId(String reviewId) {
-        this.reviewId = reviewId;
+        this.createdDate = createdDate;
     }
 
     public String getOrderId() {
@@ -33,12 +25,20 @@ public class Review {
         this.orderId = orderId;
     }
 
-    public String getComment() {
-        return comment;
+    public String getRestaurantId() {
+        return restaurantId;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setRestaurantId(String restaurantId) {
+        this.restaurantId = restaurantId;
+    }
+
+    public String getReviewText() {
+        return reviewText;
+    }
+
+    public void setReviewText(String reviewText) {
+        this.reviewText = reviewText;
     }
 
     public double getRating() {
@@ -49,11 +49,11 @@ public class Review {
         this.rating = rating;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
+    public void setCreatedDate(LocalDateTime createdDate) {
+        this.createdDate = createdDate;
     }
 }

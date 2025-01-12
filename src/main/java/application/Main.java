@@ -1,9 +1,14 @@
 package application;
-import java.io.IOException;
-import java.sql.SQLException;
+import javafx.application.Application;
+import javafx.stage.Stage;
 
-public class Main {
+public class Main extends Application {
     public static void main(String[] args) {
+        launch(args);
+    }
 
+    @Override
+    public void start(Stage stage) throws Exception {
+        application.Application application = new application.Application(stage);
     }
 }

@@ -2,7 +2,7 @@
 //
 //import data.UserDAO;
 //import models.User;
-//import model.utils.ErrorHandler;
+//import model.utils.Logger;
 //import java.sql.SQLException;
 //
 //public class Login {
@@ -29,7 +29,7 @@
 //                return true; // Successfully signed in
 //            }
 //        } catch (Exception e) {
-//            ErrorHandler.handle(e, "An error occurred during sign-in");
+//            Logger.handle(e, "An error occurred during sign-in");
 //        }
 //
 //        return false; // Sign-in failed
@@ -43,7 +43,7 @@
 //            this.user = USER_DAO.fetchUser(username);
 //        } catch (SQLException e) {
 //            // Handle or log the exception here
-//            ErrorHandler.handle(e, "An error occurred while fetching user information.");
+//            Logger.handle(e, "An error occurred while fetching user information.");
 //            return false;
 //        }
 //

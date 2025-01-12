@@ -1,15 +1,13 @@
 package model;
 
 public class CreditCard {
-    private final String creditCardId;
     private final String type;
     private final String name;
     private final String cardNumber;
     private final String expiryDate;
     private final String cvv;
 
-    private CreditCard(String creditCardId, String type, String name, String cardNumber, String expiryDate, String cvv) {
-        this.creditCardId = creditCardId;
+    private CreditCard(String type, String name, String cardNumber, String expiryDate, String cvv) {
         this.type = type;
         this.name = name;
         this.cardNumber = cardNumber;
@@ -17,10 +15,7 @@ public class CreditCard {
         this.cvv = cvv;
     }
 
-    public static CreditCard create(String creditCardId, String type, String name, String cardNumber, String expiryDate, String cvv) {
-        if (creditCardId == null || creditCardId.isEmpty()) {
-            throw new IllegalArgumentException("Credit Card ID cannot be null or empty");
-        }
+    public static CreditCard create(String type, String name, String cardNumber, String expiryDate, String cvv) {
         if (type == null || type.isEmpty()) {
             throw new IllegalArgumentException("Type cannot be null or empty");
         }
@@ -36,11 +31,7 @@ public class CreditCard {
         if (cvv == null || (cvv.length() != 3 && cvv.length() != 4)) {
             throw new IllegalArgumentException("CVV must be 3 or 4 digits");
         }
-        return new CreditCard(creditCardId, type, name, cardNumber, expiryDate, cvv);
-    }
-
-    public String getCreditCardId() {
-        return creditCardId;
+        return new CreditCard(type, name, cardNumber, expiryDate, cvv);
     }
 
     public String getType() {

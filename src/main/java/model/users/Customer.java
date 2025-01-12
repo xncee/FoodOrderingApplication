@@ -14,7 +14,7 @@ public class Customer extends User {
         private List<CreditCard> creditCards;
         private List<Order> orderHistory;
 
-        public CustomerBuilder(String id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
+        public CustomerBuilder(int id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
             super(UserType.CUSTOMER, id, username, fullName, email, phoneNumber, hashedPassword);
         }
 

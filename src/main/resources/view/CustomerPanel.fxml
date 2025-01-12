@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fillWidth="false" styleClass="restaurant-container" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerPanelController">
+    <stylesheets>
+        <URL value="@../styles/customerPanel.css" />
+    </stylesheets>
+    <VBox fillWidth="false" styleClass="page-content">
+        <VBox styleClass="main-wrapper">
+            <VBox styleClass="main-content">
+                <VBox styleClass="header">
+                    <HBox styleClass="header-content">
+                        <HBox styleClass="nav-wrapper">
+                            <Label styleClass="brand-name" text="FoodHub" />
+                            <HBox styleClass="nav-links">
+                                <Hyperlink onAction="#handleRestaurants" text="Restaurants" />
+                                <Hyperlink onAction="#handleOrders" text="Orders" />
+                                <Hyperlink onAction="#handleSupport" text="Support" />
+                            </HBox>
+                        </HBox>
+                        <ImageView fitWidth="128" preserveRatio="true" styleClass="logo">
+                            <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/683fdf54a5fad7cd043c0cb6e1947efd0d5f78f87ceb2d97c6e35d9947bd925f?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                        </ImageView>
+                    </HBox>
+                </VBox>
+
+                <VBox styleClass="search-section">
+                    <HBox styleClass="search-container">
+                        <VBox styleClass="search-wrapper">
+                            <HBox styleClass="search-input">
+                                <ImageView fitWidth="16" preserveRatio="true" styleClass="search-icon-img">
+                                    <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/481c309013dd3519ec4731102fdff672939c1eeda6c373b04bd5be01790618fa?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                </ImageView>
+                                <TextField focusTraversable="true" promptText="Search restaurants or dishes" styleClass="search-placeholder" />
+                            </HBox>
+                        </VBox>
+                        <HBox styleClass="filter-sort-container">
+                            <Button onAction="#handleFilter" styleClass="filter-button">
+                                <graphic>
+                                    <ImageView fitWidth="16" preserveRatio="true">
+                                        <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/f1b2bf4419378f13b8cbc93dd19cc80e9bef787d0684fc277677228c54ed7e8b?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                    </ImageView>
+                                </graphic>
+                                <text>Filters</text>
+                            </Button>
+                            <Button onAction="#handleSort" styleClass="sort-button">
+                                <graphic>
+                                    <ImageView fitWidth="16" preserveRatio="true">
+                                        <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/9c0989cc7b73c3b475b9902c73efea09fd1df6312b59fedfc1bc5e74f0742724?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                    </ImageView>
+                                </graphic>
+                                <text>Sort</text>
+                            </Button>
+                        </HBox>
+                    </HBox>
+
+                    <HBox styleClass="category-list">
+                        <ToggleButton selected="true" styleClass="category-button,active" text="All" />
+                        <ToggleButton styleClass="category-button" text="Pizza" />
+                        <ToggleButton styleClass="category-button" text="Burgers" />
+                        <ToggleButton styleClass="category-button" text="Sushi" />
+                        <ToggleButton styleClass="category-button" text="Italian" />
+                        <ToggleButton styleClass="category-button" text="Chinese" />
+                        <ToggleButton styleClass="category-button" text="Indian" />
+                    </HBox>
+
+                    <GridPane hgap="20" styleClass="restaurant-grid" vgap="20">
+                        <VBox styleClass="restaurant-card" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                            <VBox styleClass="restaurant-image">
+                                <Label styleClass="delivery-time" text="30-45 min" />
+                            </VBox>
+                            <VBox styleClass="restaurant-info">
+                                <HBox styleClass="restaurant-header">
+                                    <Label styleClass="restaurant-name" text="Pizza Palace" />
+                                    <HBox styleClass="rating">
+                                        <ImageView fitWidth="18" preserveRatio="true">
+                                            <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/3e2bea4a3357ee105bd713f6564a4a8c065cf9938b2e0fb911a415b96897547f?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                        </ImageView>
+                                        <Label styleClass="rating-value" text="4.5" />
+                                    </HBox>
+                                </HBox>
+                                <Label styleClass="restaurant-type" text="Italian • Pizza • Pasta" />
+                                <HBox styleClass="distance">
+                                    <ImageView fitWidth="11" preserveRatio="true">
+                                        <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/d59eb528e7912cb39d6115064c3f649180f32a07b086ad14b83b5b431a6c2d1a?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                    </ImageView>
+                                    <Label text="2.4 km away" />
+                                </HBox>
+                            </VBox>
+                        </VBox>
+
+                        <VBox styleClass="restaurant-card" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                            <VBox styleClass="restaurant-image">
+                                <Label styleClass="delivery-time" text="20-35 min" />
+                            </VBox>
+                            <VBox styleClass="restaurant-info">
+                                <HBox styleClass="restaurant-header">
+                                    <Label styleClass="restaurant-name" text="Burger House" />
+                                    <HBox styleClass="rating">
+                                        <ImageView fitWidth="18" preserveRatio="true">
+                                            <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/93513f7d2c2df2071070108f755f04b376397568869134b29491858e99669c1e?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                        </ImageView>
+                                        <Label styleClass="rating-value" text="4.2" />
+                                    </HBox>
+                                </HBox>
+                                <Label styleClass="restaurant-type" text="American • Burgers • Fast Food" />
+                                <HBox styleClass="distance">
+                                    <ImageView fitWidth="11" preserveRatio="true">
+                                        <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/2f7f2e45f43fd658634fc78c452aba131cf5218c4a8cb443a49eba2b2fcd98de?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                    </ImageView>
+                                    <Label text="1.8 km away" />
+                                </HBox>
+                            </VBox>
+                        </VBox>
+
+                        <VBox styleClass="restaurant-card" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                            <VBox styleClass="restaurant-image">
+                                <Label styleClass="delivery-time" text="25-40 min" />
+                            </VBox>
+                            <VBox styleClass="restaurant-info">
+                                <HBox styleClass="restaurant-header">
+                                    <Label styleClass="restaurant-name" text="Sushi Master" />
+                                    <HBox styleClass="rating">
+                                        <ImageView fitWidth="18" preserveRatio="true">
+                                            <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/7ba90f3abe6e1dde944ebd07f2cb2f04d31b53fb6fa029623e4838bc23ce81a7?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                        </ImageView>
+                                        <Label styleClass="rating-value" text="4.7" />
+                                    </HBox>
+                                </HBox>
+                                <Label styleClass="restaurant-type" text="Japanese • Sushi • Asian" />
+                                <HBox styleClass="distance">
+                                    <ImageView fitWidth="11" preserveRatio="true">
+                                        <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/2ab147d03088d475be624d025e1994cde019ad68ce5bc52072efeda77c2b5c55?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                                    </ImageView>
+                                    <Label text="3.1 km away" />
+                                </HBox>
+                            </VBox>
+                        </VBox>
+                  <columnConstraints>
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                  </rowConstraints>
+                    </GridPane>
+                </VBox>
+            </VBox>
+
+            <VBox styleClass="footer">
+                <VBox styleClass="footer-content">
+                    <GridPane hgap="20" styleClass="footer-links" vgap="20">
+                        <VBox styleClass="footer-column" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                            <Label styleClass="footer-heading" text="About FoodHub" />
+                            <VBox styleClass="footer-list">
+                                <Hyperlink onAction="#handleAboutUs" text="About Us" />
+                                <Hyperlink onAction="#handleCareers" text="Careers" />
+                                <Hyperlink onAction="#handlePress" text="Press" />
+                            </VBox>
+                        </VBox>
+
+                        <VBox styleClass="footer-column" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                            <Label styleClass="footer-heading" text="For Restaurants" />
+                            <VBox styleClass="footer-list">
+                                <Hyperlink onAction="#handlePartner" text="Partner with us" />
+                                <Hyperlink onAction="#handleRestaurantApp" text="Restaurant app" />
+                            </VBox>
+                        </VBox>
+
+                        <VBox styleClass="footer-column" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                            <Label styleClass="footer-heading" text="For Drivers" />
+                            <VBox styleClass="footer-list">
+                                <Hyperlink onAction="#handleBecomeDriver" text="Become a Driver" />
+                                <Hyperlink onAction="#handleDriverPortal" text="Driver Portal" />
+                            </VBox>
+                        </VBox>
+
+                        <VBox styleClass="footer-column" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                            <Label styleClass="footer-heading" text="Support" />
+                            <VBox styleClass="footer-list">
+                                <Hyperlink onAction="#handleHelpCenter" text="Help Center" />
+                                <Hyperlink onAction="#handleContact" text="Contact Us" />
+                                <Hyperlink onAction="#handleTerms" text="Terms of Service" />
+                                <Hyperlink onAction="#handlePrivacy" text="Privacy Policy" />
+                            </VBox>
+                        </VBox>
+                  <columnConstraints>
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                  </rowConstraints>
+                    </GridPane>
+
+                    <HBox styleClass="footer-bottom">
+                        <Label text="© 2025 FoodHub. All rights reserved." />
+                        <ImageView fitWidth="78" preserveRatio="true">
+                            <Image url="https://cdn.builder.io/api/v1/image/assets/TEMP/cfb6d5c953ea03536b76f4f3e3ef8d0f86acfcc644ddd676cf96a5e106c02c1d?placeholderIfAbsent=true&amp;apiKey=3f03414f55d245c49f3ec70f7ac2fc28" />
+                        </ImageView>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </VBox>
+    </VBox>
+</VBox>

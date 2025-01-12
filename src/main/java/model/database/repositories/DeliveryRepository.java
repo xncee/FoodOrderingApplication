@@ -1,28 +1,27 @@
 package model.database.repositories;
 
-import model.Order;
+import model.Delivery;
 
 import java.util.List;
 
-public class OrderRepository implements IRepository<Order> {
-
+public class DeliveryRepository implements IRepository<Delivery> {
     @Override
-    public Order getById(int id) {
+    public Delivery getById(int id) {
         return null;
     }
 
     @Override
-    public List<Order> getAll() {
+    public List<Delivery> getAll() {
         return null;
     }
 
     @Override
-    public void save(Order entity) {
+    public void save(Delivery entity) {
 
     }
 
     @Override
-    public void update(Order entity) {
+    public void update(Delivery entity) {
 
     }
 

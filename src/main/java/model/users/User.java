@@ -4,7 +4,7 @@ import model.enums.UserType;
 
 public abstract class User {
     private UserType userType;
-    private String id;
+    private Integer id;
     private String username;
     private String fullName;
     private String email;
@@ -31,11 +31,11 @@ public abstract class User {
         this.userType = userType;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

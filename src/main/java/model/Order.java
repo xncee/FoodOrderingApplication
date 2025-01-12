@@ -10,7 +10,7 @@ public class Order {
         private String customerId;
         private String deliveryId;
         private String orderType;
-        private List<OrderItem> items;
+        private ShoppingCart shoppingCart;
         private Promo promoCode;
         private double discount;
         private double total;
@@ -24,9 +24,6 @@ public class Order {
         private String status;
         private boolean isCanceled;
         private String cancellationReason;
-        private LocalDateTime modifiedAt;
-        private String updatedBy;
-        private LocalDateTime updatedAt;
 
         public OrderBuilder setOrderId(String orderId) {
             this.orderId = orderId;
@@ -53,8 +50,8 @@ public class Order {
             return this;
         }
 
-        public OrderBuilder setItems(List<OrderItem> items) {
-            this.items = items;
+        public OrderBuilder setShoppingCart(ShoppingCart shoppingCart) {
+            this.shoppingCart = shoppingCart;
             return this;
         }
 
@@ -123,21 +120,6 @@ public class Order {
             return this;
         }
 
-        public OrderBuilder setModifiedAt(LocalDateTime modifiedAt) {
-            this.modifiedAt = modifiedAt;
-            return this;
-        }
-
-        public OrderBuilder setUpdatedBy(String updatedBy) {
-            this.updatedBy = updatedBy;
-            return this;
-        }
-
-        public OrderBuilder setUpdatedAt(LocalDateTime updatedAt) {
-            this.updatedAt = updatedAt;
-            return this;
-        }
-
         public Order build() {
             return new Order(this);
         }
@@ -148,7 +130,7 @@ public class Order {
     private String customerId;
     private String deliveryId;
     private String orderType;
-    private List<OrderItem> items;
+    private ShoppingCart shoppingCart;
     private Promo promoCode;
     private double discount;
     private double total;
@@ -162,9 +144,6 @@ public class Order {
     private String status;
     private boolean isCanceled;
     private String cancellationReason;
-    private LocalDateTime modifiedAt;
-    private String updatedBy;
-    private LocalDateTime updatedAt;
 
     private Order(OrderBuilder builder) {
         this.orderId = builder.orderId;
@@ -172,7 +151,7 @@ public class Order {
         this.customerId = builder.customerId;
         this.deliveryId = builder.deliveryId;
         this.orderType = builder.orderType;
-        this.items = builder.items;
+        this.shoppingCart = builder.shoppingCart;
         this.promoCode = builder.promoCode;
         this.discount = builder.discount;
         this.total = builder.total;
@@ -186,9 +165,6 @@ public class Order {
         this.status = builder.status;
         this.isCanceled = builder.isCanceled;
         this.cancellationReason = builder.cancellationReason;
-        this.modifiedAt = builder.modifiedAt;
-        this.updatedBy = builder.updatedBy;
-        this.updatedAt = builder.updatedAt;
     }
 
     public String getOrderId() {
@@ -231,12 +207,12 @@ public class Order {
         this.orderType = orderType;
     }
 
-    public List<OrderItem> getItems() {
-        return items;
+    public ShoppingCart getShoppingCart() {
+        return shoppingCart;
     }
 
-    public void setItems(List<OrderItem> items) {
-        this.items = items;
+    public void setShoppingCart(ShoppingCart shoppingCart) {
+        this.shoppingCart = shoppingCart;
     }
 
     public Promo getPromoCode() {
@@ -341,29 +317,5 @@ public class Order {
 
     public void setCancellationReason(String cancellationReason) {
         this.cancellationReason = cancellationReason;
-    }
-
-    public LocalDateTime getModifiedAt() {
-        return modifiedAt;
-    }
-
-    public void setModifiedAt(LocalDateTime modifiedAt) {
-        this.modifiedAt = modifiedAt;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public void setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
     }
 }

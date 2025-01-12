@@ -1,13 +1,12 @@
 package model;
 
 import model.enums.ItemCategory;
-import model.users.Restaurant;
 
 import java.util.List;
 
 public class Item {
     private String itemId;
-    private Restaurant restaurant;
+    private String restaurantId;
     private ItemCategory category;
     private List<String> tags;
     private String image;
@@ -19,9 +18,9 @@ public class Item {
     private double finalPrice;
     private boolean isAvailable;
 
-    public Item(String itemId, Restaurant restaurant, ItemCategory category, List<String> tags, String image, String title, String description, List<String> customizations, double price, double discount, double finalPrice, boolean isAvailable) {
+    public Item(String itemId, String restaurantId, ItemCategory category, List<String> tags, String image, String title, String description, List<String> customizations, double price, double discount, double finalPrice, boolean isAvailable) {
         this.itemId = itemId;
-        this.restaurant = restaurant;
+        this.restaurantId = restaurantId;
         this.category = category;
         this.tags = tags;
         this.image = image;

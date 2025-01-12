@@ -20,13 +20,12 @@
 
 <!-- Root VBox container for the entire login page -->
 
-
-<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignInController">
+<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignInController">
     <content>
         <VBox alignment="CENTER" styleClass="login-container">
             <!-- Link to external CSS file -->
             <stylesheets>
-                <URL value="@../../resources/styles/signin.css" />
+                <URL value="@../styles/signin.css" />
             </stylesheets>
 
             <!-- Background container -->
@@ -36,12 +35,26 @@
 
                     <!-- Header section: Logo, app title, and description -->
                     <VBox alignment="CENTER" spacing="8" styleClass="login-header">
-                        <!-- Logo image -->
-                        <ImageView fitHeight="36" fitWidth="40" focusTraversable="false" styleClass="logo">
-                            <Image url="@../../resources/icons/logo.png" />
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                              <!-- Logo image -->
+                              <ImageView fitHeight="29.0" fitWidth="29.0" focusTraversable="false" preserveRatio="true" styleClass="logo">
+                                  <Image url="@../icons/pizza-icon.png" />
+                              </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" focusTraversable="false" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image url="@../icons/burger-icon.png" />
+                           </image>
                         </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" focusTraversable="false" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image url="@../icons/fish-icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
                         <!-- Application title -->
-                        <Label styleClass="app-title" text="%label.applicationDescription" />
+                        <Label styleClass="app-title" text="Talabat" />
                         <!-- Application description -->
                         <Label styleClass="app-description" text="%label.applicationDescription" />
                     </VBox>

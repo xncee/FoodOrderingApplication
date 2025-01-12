@@ -12,7 +12,7 @@ public class Restaurant extends User {
         private List<Item> menuItems;
         private double rating;
 
-        public RestaurantBuilder(String id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
+        public RestaurantBuilder(int id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
             super(UserType.RESTAURANT, id, username, fullName, email, phoneNumber, hashedPassword);
         }
 

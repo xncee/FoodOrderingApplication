@@ -1,28 +1,27 @@
 package model.database.repositories;
 
-import model.Order;
+import model.CartItem;
 
 import java.util.List;
 
-public class OrderRepository implements IRepository<Order> {
-
+public class CartItemRepository implements IRepository<CartItem> {
     @Override
-    public Order getById(int id) {
+    public CartItem getById(int id) {
         return null;
     }
 
     @Override
-    public List<Order> getAll() {
+    public List<CartItem> getAll() {
         return null;
     }
 
     @Override
-    public void save(Order entity) {
+    public void save(CartItem entity) {
 
     }
 
     @Override
-    public void update(Order entity) {
+    public void update(CartItem entity) {
 
     }
 

@@ -4,7 +4,7 @@ import model.enums.UserType;
 
 public abstract class UserBuilder<T> {
     protected final UserType userType;
-    protected final String id;
+    protected final Integer id;
     protected final String username;
     protected final String fullName;
     protected final String email;
@@ -12,7 +12,7 @@ public abstract class UserBuilder<T> {
     protected final String hashedPassword;
     protected double balance;
 
-    public UserBuilder(UserType userType, String id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
+    public UserBuilder(UserType userType, Integer id, String username, String fullName, String email, String phoneNumber, String hashedPassword) {
         this.userType = userType;
         this.id = id;
         this.username = username;

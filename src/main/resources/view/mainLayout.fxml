@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../styles/main-style.css" />
+    </stylesheets>
+    <!-- Title Bar (Shared) -->
+<!--    <top>-->
+<!--        <fx:include source="titlebar.fxml" />-->
+<!--    </top>-->
+    <!-- Content Container (Will be dynamically updated) -->
+    <center>
+
+    </center>
+</BorderPane>

@@ -1,18 +1,29 @@
 package model;
 
-public class OrderItem {
+public class CartItem {
+    private String cartId;
     private Item itemId;
     private String itemName;
     private int quantity;
     private double price;
     private String specialInstructions;
 
-    public OrderItem(Item itemId, String itemName, int quantity, double price, String specialInstructions) {
+
+    public CartItem(String cartId, Item itemId, String itemName, int quantity, double price, String specialInstructions) {
+        this.cartId = cartId;
         this.itemId = itemId;
         this.itemName = itemName;
         this.quantity = quantity;
         this.price = price;
         this.specialInstructions = specialInstructions;
+    }
+
+    public String getCartId() {
+        return cartId;
+    }
+
+    public void setCartId(String cartId) {
+        this.cartId = cartId;
     }
 
     public Item getItemId() {

@@ -15,12 +15,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
-<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignupController">
+<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignupController">
     <content>
         <VBox alignment="CENTER">
             <stylesheets>
-                <URL value="@../../resources/styles/signup.css" />
+                <URL value="@../styles/signup.css" />
             </stylesheets>
             <children>
                 <StackPane styleClass="signup-container">
@@ -29,7 +28,7 @@
                         <VBox alignment="CENTER" spacing="10" styleClass="header-section">
                             <!-- Logo -->
                             <ImageView fitHeight="36" fitWidth="32" preserveRatio="true">
-                                <Image url="@../../resources/icons/user-icon.png" />
+                                <Image url="@../icons/user-icon.png" />
                             </ImageView>
 
                             <!-- Title -->
@@ -42,7 +41,7 @@
                             <!-- Username -->
                             <VBox spacing="5" styleClass="form-group">
                                 <Label styleClass="form-label" text="%label.username" />
-                                <TextField fx:id="usernameField" promptText="%placeholder.username" styleClass="form-input" />
+                                <TextField fx:id="usernameField" promptText="%" styleClass="form-input" />
                             </VBox>
 
                             <!-- Email -->
@@ -50,23 +49,29 @@
                                 <Label styleClass="form-label" text="%label.email" />
                                 <TextField fx:id="emailField" styleClass="form-input" />
                             </VBox>
+                     <VBox spacing="5" styleClass="form-group">
+                        <children>
+                           <Label styleClass="form-label" text="%label.phoneNumber" />
+                           <TextField fx:id="phoneNumberField" styleClass="form-input" />
+                        </children>
+                     </VBox>
 
                             <!-- Fullname -->
                             <VBox spacing="5" styleClass="form-group">
                                 <Label styleClass="form-label" text="%label.fullname" />
-                                <TextField fx:id="fullnameField" promptText="%placeholder.username" styleClass="form-input" />
+                                <TextField fx:id="fullNameField" promptText="%placeholder.username" styleClass="form-input" />
                             </VBox>
 
                             <!-- Password -->
                             <VBox spacing="5" styleClass="form-group">
                                 <Label styleClass="form-label" text="%label.password" />
-                                <PasswordField fx:id="passwordField" promptText="%placeholder.password" styleClass="form-input" />
+                                <PasswordField fx:id="passwordField" promptText="%" styleClass="form-input" />
                             </VBox>
 
                             <!-- Confirm Password -->
                             <VBox spacing="5" styleClass="form-group">
                                 <Label styleClass="form-label" text="%label.confirm_password" />
-                                <PasswordField fx:id="confirmPasswordField" promptText="%placeholder.password" styleClass="form-input" />
+                                <PasswordField fx:id="confirmPasswordField" promptText="%" styleClass="form-input" />
                             </VBox>
 
                             <!-- Terms Section -->

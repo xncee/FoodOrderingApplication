@@ -1,0 +1,233 @@
+.restaurant-container {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+}
+
+.page-content {
+    -fx-background-color: transparent;
+}
+
+.main-wrapper {
+    -fx-background-color: #fafafa;
+    -fx-padding: 0 0 530 0;
+}
+
+.header {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #e5e5e5 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0 70;
+}
+
+.header-content {
+    -fx-padding: 16 16 43 16;
+    -fx-spacing: 20;
+}
+
+.nav-wrapper {
+    -fx-spacing: 32;
+}
+
+.brand-name {
+    -fx-font-family: "Inter";
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.nav-links {
+    -fx-spacing: 25;
+}
+
+.nav-links .hyperlink {
+    -fx-text-fill: #525252;
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+    -fx-underline: false;
+}
+
+.search-section {
+    -fx-padding: 0 14;
+    -fx-max-width: 1280;
+}
+
+.search-container {
+    -fx-spacing: 20;
+}
+
+.search-input {
+    -fx-background-color: white;
+    -fx-border-color: #d4d4d4;
+    -fx-border-radius: 8;
+    -fx-padding: 13 12;
+    -fx-spacing: 12;
+}
+
+.search-placeholder {
+    -fx-prompt-text-fill: #adaebc;
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+}
+
+.filter-sort-container {
+    -fx-spacing: 16;
+}
+
+.filter-button, .sort-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #d4d4d4;
+    -fx-border-radius: 8;
+    -fx-padding: 12 17;
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+}
+
+.category-list {
+    -fx-padding: 32 80 16 0;
+    -fx-spacing: 16;
+}
+
+.category-button {
+    -fx-background-color: white;
+    -fx-border-color: #d4d4d4;
+    -fx-border-radius: 9999;
+    -fx-padding: 11 17;
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+}
+
+.category-button.active {
+    -fx-background-color: #171717;
+    -fx-text-fill: white;
+}
+
+.restaurant-grid {
+    -fx-padding: 31 2 2 2;
+}
+
+.restaurant-card {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 1, 0, 0, 1);
+    -fx-background-radius: 8;
+}
+
+.restaurant-image {
+    -fx-background-color: #d4d4d4;
+    -fx-padding: 16 80 148 16;
+}
+
+.delivery-time {
+    -fx-background-color: white;
+    -fx-background-radius: 4;
+    -fx-padding: 5 10;
+    -fx-font-family: "Inter";
+    -fx-font-size: 14;
+}
+
+.restaurant-info {
+    -fx-padding: 16;
+}
+
+.restaurant-header {
+    -fx-spacing: 20;
+}
+
+.restaurant-name {
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.rating {
+    -fx-spacing: 4;
+}
+
+.rating-value {
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+}
+
+.restaurant-type {
+    -fx-font-family: "Inter";
+    -fx-font-size: 14;
+    -fx-text-fill: #525252;
+    -fx-padding: 9 0 0 0;
+}
+
+.distance {
+    -fx-spacing: 8;
+    -fx-padding: 16 0 0 0;
+}
+
+.distance Label {
+    -fx-font-family: "Inter";
+    -fx-font-size: 14;
+    -fx-text-fill: #737373;
+}
+
+.footer {
+    -fx-background-color: white;
+    -fx-padding: 1 80;
+}
+
+.footer-content {
+    -fx-padding: 32 16;
+}
+
+.footer-links {
+    -fx-hgap: 20;
+    -fx-vgap: 20;
+}
+
+.footer-heading {
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.footer-list {
+    -fx-spacing: 8;
+}
+
+.footer-list .hyperlink {
+    -fx-text-fill: #525252;
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+    -fx-underline: false;
+}
+
+.footer-bottom {
+    -fx-padding: 33 0 0 0;
+    -fx-spacing: 20;
+    -fx-border-color: #e5e5e5 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+.footer-bottom Label {
+    -fx-font-family: "Inter";
+    -fx-font-size: 16;
+    -fx-text-fill: #525252;
+}
+
+@media screen and (max-width: 991) {
+    .header {
+        -fx-padding: 0 20;
+    }
+
+    .category-list {
+        -fx-padding: 32 20 16 0;
+    }
+
+    .restaurant-grid {
+        -fx-vgap: 25;
+    }
+
+    .footer {
+        -fx-padding: 1 20;
+    }
+
+    .footer-links {
+        -fx-vgap: 32;
+    }
+}
